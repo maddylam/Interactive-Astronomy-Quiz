@@ -1,0 +1,86 @@
+* {
+    background-color: rgb(255, 252, 237);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.web-header{
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(201, 208, 253);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(65, 54, 98);
+    padding-top: 30px;  padding-bottom: 30px;
+}
+
+.q-header{
+    text-align: center;
+    background-color: rgb(221, 211, 252);
+}
+
+.answer-button{
+    font-size:medium;
+    border-color:aliceblue;
+    background-color: rgb(148, 155, 255);
+    border-radius: 15px;
+    padding: 15px; 
+}
+
+.nav-buttons{
+    color: rgb(148, 155, 255);
+    background-color: rgb(229, 226, 255);
+    border-color: aliceblue;
+    font-size: large;
+    padding-left: 10px; padding-right: 10px;
+    padding-top: 5px; padding-bottom: 5px;
+    border-radius: 13px;
+}
+
+.submit-button{
+    color: rgb(229, 226, 255);
+    background-color: rgb(148, 155, 255);
+    border-color: aliceblue;
+    font-size:larger;
+    padding-left: 10px; padding-right: 10px;
+    padding-top: 5px; padding-bottom: 5px;
+    border-radius: 13px;
+}
+
+.question-box{
+    text-align: center;
+    margin: auto; 
+    width: 800px;
+    background-color: rgb(221, 211, 252);
+    padding-top: 20px;  padding-bottom: 20px;
+    padding-left: 10px; padding-right: 10px;
+    border-radius: 30px;
+}
+
+#results-page{
+    display: none;
+    background-color: rgb(221, 211, 252); 
+    width: 500px; 
+    text-align: center; 
+    border-radius: 30px;
+}
+
+#results-page h2, p, span{
+    background-color: rgb(221, 211, 252)
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:5px; 
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#interactive-quiz{
+    display: block;
+}

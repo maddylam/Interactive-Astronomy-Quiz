@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="./css/quizapp.css">
+    <script src="./javascript/quizlogic.js" defer> </script>
+    
+</head>
+
+<body>
+
+    <header>
+        <h1 class="web-header">
+            Interactive Quiz
+            <br>
+            ★
+            <br>
+            Learn astronomy facts!
+        </h1>
+    </header>
+
+    <main>
+        <section id="interactive-quiz">
+            <section class="question-box">
+                <!-- displaying the current question with multiple-choice answers -->
+
+                <h2 class="q-header", id="questionHeader">
+                    Press next for the question!
+                </h2>
+
+                <button class="answer-button", id="answer-A", onclick="adduserAnswers('a')"></button><br>
+                
+                <button class="answer-button", id="answer-B", onclick="adduserAnswers('b')"></button><br>
+                
+                <button class="answer-button", id="answer-C", onclick="adduserAnswers('c')"></button>
+            </section>
+        
+            <section class="nav-container">
+                <!-- Navigation buttons to move to the next question or previous question and to submit the quiz -->
+                <button class="nav-buttons", onclick="prevQ()">
+                    previous
+                </button>
+
+                <button class="nav-buttons", onclick="nextQ()">
+                    next 
+                </button>
+                
+                <button class="submit-button", onclick="showResults()">
+                    submit
+                </button>
+            </section>
+        </section>
+    
+        <section id="results-page">
+            <!-- A results section that is initially hidden and shows the user's score and correct answers after submission -->
+            <h2>
+                ★ Results ★
+            </h2>
+
+            <p>
+                <!-- show user score and their correct answers -->
+                You got <span id="numCorrect"></span>/5 questions correct! 
+                <br>
+                <br>
+                Q1: Why do we have seasons? <br>
+                You answered: <span id="ans1"></span><br>
+                Correct answer: <span id="corr1"></span><br>
+                <br>
+
+                Q2: What is the ideal environment for star formation? <br>
+                You answered: <span id="ans2"></span><br>
+                Correct answer: <span id="corr2"></span><br>
+                <br>
+
+                Q3: What fact is false about dark energy? <br>
+                You answered: <span id="ans3"></span><br>
+                Correct answer: <span id="corr3"></span><br>
+                <br>
+
+                Q4: What fact is true about the Big Bang? <br>
+                You answered: <span id="ans4"></span><br>
+                Correct answer: <span id="corr4"></span><br>
+                <br>
+
+                Q5: What colour is reflection nebula in the optical? <br>
+                You answered: <span id="ans5"></span><br>
+                Correct answer: <span id="corr5"></span><br>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
